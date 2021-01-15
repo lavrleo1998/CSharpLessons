@@ -13,11 +13,11 @@ namespace JsonDataBaseFootball.Services
     {
         public static void GenerateNewDB()
         {
-            Storage.Save(new FootballerSearch(0, "Sharapov"));
-            Storage.Save(new FootballerSearch(1, "Kirjakov"));
-            Storage.Save(new FootballerSearch(2, "Arshavin"));
-            Storage.Save(new FootballerSearch(3, "Messi"));
-            Storage.Save(new FootballerSearch(4, "Ronaldy"));
+            Storage.Save(new Footballer(0, "Sharapov"));
+            Storage.Save(new Footballer(1, "Kirjakov"));
+            Storage.Save(new Footballer(2, "Arshavin"));
+            Storage.Save(new Footballer(3, "Messi"));
+            Storage.Save(new Footballer(4, "Ronaldy"));
 
             Storage.Save(new FootballerTeamComposition(0, 1, 1, 0));
             Storage.Save(new FootballerTeamComposition(1, 2, 1, 0));

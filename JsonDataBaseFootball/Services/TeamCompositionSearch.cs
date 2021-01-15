@@ -9,7 +9,7 @@ namespace JsonDataBaseFootball.Services
 {
     class TeamCompositionSearch
     {
-        public static void ByFootballer(int? idF, int?)
+        public static void ByFootballer(int? idF, int name)
         {
             if (idF != null)
             {
@@ -27,7 +27,6 @@ namespace JsonDataBaseFootball.Services
                     ///bad response
                 }
             }
-
         }
     }
 }
