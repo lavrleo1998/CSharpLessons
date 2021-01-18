@@ -15,7 +15,7 @@ namespace JsonDataBaseFootball.Services
             var listEvent = Storage.Get<Event>();
             var returnListEvent = new List<Event>();
 
-            foreach (var itemEvent in listEvent)///////4426526412
+            foreach (var itemEvent in listEvent)
             {
                 if ((ID == null || itemEvent.EventTypeID == ID)
                     && (dateTime == null || itemEvent.DateTime == dateTime)

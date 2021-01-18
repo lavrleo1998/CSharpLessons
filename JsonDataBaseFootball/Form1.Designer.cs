@@ -31,38 +31,40 @@ namespace JsonDataBaseFootball
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageEvent = new System.Windows.Forms.TabPage();
-            this.tabPageEventType = new System.Windows.Forms.TabPage();
-            this.tabPageFootballer = new System.Windows.Forms.TabPage();
-            this.tabPageFootballerTeamComposition = new System.Windows.Forms.TabPage();
-            this.tabPagePosition = new System.Windows.Forms.TabPage();
-            this.tabPageTeamComposition = new System.Windows.Forms.TabPage();
-            this.tabPageTeamCompositionType = new System.Windows.Forms.TabPage();
-            this.tabPageTrainer = new System.Windows.Forms.TabPage();
-            this.buttonFindEvent = new System.Windows.Forms.Button();
-            this.textBoxEventTypeId = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxEventTypeId = new System.Windows.Forms.TextBox();
+            this.buttonFindEvent = new System.Windows.Forms.Button();
+            this.tabPageEventType = new System.Windows.Forms.TabPage();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.buttonFindEventType = new System.Windows.Forms.Button();
+            this.tabPageFootballer = new System.Windows.Forms.TabPage();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.buttonFindFootballer = new System.Windows.Forms.Button();
+            this.tabPageFootballerTeamComposition = new System.Windows.Forms.TabPage();
             this.buttonFindFootballerTeamComposition = new System.Windows.Forms.Button();
+            this.tabPagePosition = new System.Windows.Forms.TabPage();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.buttonFindPosition = new System.Windows.Forms.Button();
+            this.tabPageTeamComposition = new System.Windows.Forms.TabPage();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.buttonFindTeamComposition = new System.Windows.Forms.Button();
+            this.tabPageTeamCompositionType = new System.Windows.Forms.TabPage();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.buttonFindTeamCompositionType = new System.Windows.Forms.Button();
+            this.tabPageTrainer = new System.Windows.Forms.TabPage();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.buttonFindTrainer = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPageEvent.SuspendLayout();
             this.tabPageEventType.SuspendLayout();
@@ -73,6 +75,7 @@ namespace JsonDataBaseFootball
             this.tabPageTeamCompositionType.SuspendLayout();
             this.tabPageTrainer.SuspendLayout();
             this.tabControl2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -108,89 +111,58 @@ namespace JsonDataBaseFootball
             this.tabPageEvent.TabIndex = 0;
             this.tabPageEvent.Text = "Event";
             // 
-            // tabPageEventType
+            // textBox6
             // 
-            this.tabPageEventType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.tabPageEventType.Controls.Add(this.textBox4);
-            this.tabPageEventType.Controls.Add(this.buttonFindEventType);
-            this.tabPageEventType.Location = new System.Drawing.Point(4, 22);
-            this.tabPageEventType.Name = "tabPageEventType";
-            this.tabPageEventType.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageEventType.Size = new System.Drawing.Size(614, 299);
-            this.tabPageEventType.TabIndex = 1;
-            this.tabPageEventType.Text = "EventType";
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox6.Location = new System.Drawing.Point(4, 206);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(450, 26);
+            this.textBox6.TabIndex = 6;
+            this.textBox6.Text = "Имя тренера";
             // 
-            // tabPageFootballer
+            // textBox3
             // 
-            this.tabPageFootballer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.tabPageFootballer.Controls.Add(this.textBox5);
-            this.tabPageFootballer.Controls.Add(this.buttonFindFootballer);
-            this.tabPageFootballer.Location = new System.Drawing.Point(4, 22);
-            this.tabPageFootballer.Name = "tabPageFootballer";
-            this.tabPageFootballer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFootballer.Size = new System.Drawing.Size(614, 299);
-            this.tabPageFootballer.TabIndex = 2;
-            this.tabPageFootballer.Text = "Footballer";
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3.Location = new System.Drawing.Point(4, 174);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(450, 26);
+            this.textBox3.TabIndex = 5;
+            this.textBox3.Text = "Имя игрока";
             // 
-            // tabPageFootballerTeamComposition
+            // textBox1
             // 
-            this.tabPageFootballerTeamComposition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tabPageFootballerTeamComposition.Controls.Add(this.buttonFindFootballerTeamComposition);
-            this.tabPageFootballerTeamComposition.Location = new System.Drawing.Point(4, 22);
-            this.tabPageFootballerTeamComposition.Name = "tabPageFootballerTeamComposition";
-            this.tabPageFootballerTeamComposition.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageFootballerTeamComposition.Size = new System.Drawing.Size(614, 299);
-            this.tabPageFootballerTeamComposition.TabIndex = 3;
-            this.tabPageFootballerTeamComposition.Text = "FootballerTeamComposition";
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.Location = new System.Drawing.Point(4, 142);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(450, 26);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "Тип состава команды";
             // 
-            // tabPagePosition
+            // dateTimePicker1
             // 
-            this.tabPagePosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tabPagePosition.Controls.Add(this.textBox9);
-            this.tabPagePosition.Controls.Add(this.buttonFindPosition);
-            this.tabPagePosition.Location = new System.Drawing.Point(4, 22);
-            this.tabPagePosition.Name = "tabPagePosition";
-            this.tabPagePosition.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePosition.Size = new System.Drawing.Size(614, 654);
-            this.tabPagePosition.TabIndex = 4;
-            this.tabPagePosition.Text = "Position";
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(4, 46);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(450, 26);
+            this.dateTimePicker1.TabIndex = 3;
             // 
-            // tabPageTeamComposition
+            // textBox2
             // 
-            this.tabPageTeamComposition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.tabPageTeamComposition.Controls.Add(this.textBox10);
-            this.tabPageTeamComposition.Controls.Add(this.textBox11);
-            this.tabPageTeamComposition.Controls.Add(this.buttonFindTeamComposition);
-            this.tabPageTeamComposition.Location = new System.Drawing.Point(4, 22);
-            this.tabPageTeamComposition.Name = "tabPageTeamComposition";
-            this.tabPageTeamComposition.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTeamComposition.Size = new System.Drawing.Size(614, 654);
-            this.tabPageTeamComposition.TabIndex = 5;
-            this.tabPageTeamComposition.Text = "TeamComposition";
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.Location = new System.Drawing.Point(4, 110);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(450, 26);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.Text = "Состав команды";
             // 
-            // tabPageTeamCompositionType
+            // textBoxEventTypeId
             // 
-            this.tabPageTeamCompositionType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.tabPageTeamCompositionType.Controls.Add(this.textBox13);
-            this.tabPageTeamCompositionType.Controls.Add(this.buttonFindTeamCompositionType);
-            this.tabPageTeamCompositionType.Location = new System.Drawing.Point(4, 22);
-            this.tabPageTeamCompositionType.Name = "tabPageTeamCompositionType";
-            this.tabPageTeamCompositionType.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTeamCompositionType.Size = new System.Drawing.Size(614, 654);
-            this.tabPageTeamCompositionType.TabIndex = 6;
-            this.tabPageTeamCompositionType.Text = "TeamCompositionType";
-            // 
-            // tabPageTrainer
-            // 
-            this.tabPageTrainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.tabPageTrainer.Controls.Add(this.textBox15);
-            this.tabPageTrainer.Controls.Add(this.buttonFindTrainer);
-            this.tabPageTrainer.Location = new System.Drawing.Point(4, 22);
-            this.tabPageTrainer.Name = "tabPageTrainer";
-            this.tabPageTrainer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTrainer.Size = new System.Drawing.Size(614, 299);
-            this.tabPageTrainer.TabIndex = 7;
-            this.tabPageTrainer.Text = "Trainer";
+            this.textBoxEventTypeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxEventTypeId.Location = new System.Drawing.Point(4, 78);
+            this.textBoxEventTypeId.Name = "textBoxEventTypeId";
+            this.textBoxEventTypeId.Size = new System.Drawing.Size(450, 26);
+            this.textBoxEventTypeId.TabIndex = 1;
+            this.textBoxEventTypeId.Text = "Тип события";
             // 
             // buttonFindEvent
             // 
@@ -202,31 +174,17 @@ namespace JsonDataBaseFootball
             this.buttonFindEvent.Text = "Найти";
             this.buttonFindEvent.UseVisualStyleBackColor = true;
             // 
-            // textBoxEventTypeId
+            // tabPageEventType
             // 
-            this.textBoxEventTypeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxEventTypeId.Location = new System.Drawing.Point(4, 78);
-            this.textBoxEventTypeId.Name = "textBoxEventTypeId";
-            this.textBoxEventTypeId.Size = new System.Drawing.Size(450, 26);
-            this.textBoxEventTypeId.TabIndex = 1;
-            this.textBoxEventTypeId.Text = "Тип события";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(4, 110);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(450, 26);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Состав команды";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(4, 46);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(450, 26);
-            this.dateTimePicker1.TabIndex = 3;
+            this.tabPageEventType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.tabPageEventType.Controls.Add(this.textBox4);
+            this.tabPageEventType.Controls.Add(this.buttonFindEventType);
+            this.tabPageEventType.Location = new System.Drawing.Point(4, 22);
+            this.tabPageEventType.Name = "tabPageEventType";
+            this.tabPageEventType.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageEventType.Size = new System.Drawing.Size(614, 299);
+            this.tabPageEventType.TabIndex = 1;
+            this.tabPageEventType.Text = "EventType";
             // 
             // textBox4
             // 
@@ -247,6 +205,18 @@ namespace JsonDataBaseFootball
             this.buttonFindEventType.Text = "Найти";
             this.buttonFindEventType.UseVisualStyleBackColor = true;
             // 
+            // tabPageFootballer
+            // 
+            this.tabPageFootballer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.tabPageFootballer.Controls.Add(this.textBox5);
+            this.tabPageFootballer.Controls.Add(this.buttonFindFootballer);
+            this.tabPageFootballer.Location = new System.Drawing.Point(4, 22);
+            this.tabPageFootballer.Name = "tabPageFootballer";
+            this.tabPageFootballer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageFootballer.Size = new System.Drawing.Size(614, 299);
+            this.tabPageFootballer.TabIndex = 2;
+            this.tabPageFootballer.Text = "Footballer";
+            // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -266,6 +236,17 @@ namespace JsonDataBaseFootball
             this.buttonFindFootballer.Text = "Найти";
             this.buttonFindFootballer.UseVisualStyleBackColor = true;
             // 
+            // tabPageFootballerTeamComposition
+            // 
+            this.tabPageFootballerTeamComposition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tabPageFootballerTeamComposition.Controls.Add(this.buttonFindFootballerTeamComposition);
+            this.tabPageFootballerTeamComposition.Location = new System.Drawing.Point(4, 22);
+            this.tabPageFootballerTeamComposition.Name = "tabPageFootballerTeamComposition";
+            this.tabPageFootballerTeamComposition.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageFootballerTeamComposition.Size = new System.Drawing.Size(614, 299);
+            this.tabPageFootballerTeamComposition.TabIndex = 3;
+            this.tabPageFootballerTeamComposition.Text = "FootballerTeamComposition";
+            // 
             // buttonFindFootballerTeamComposition
             // 
             this.buttonFindFootballerTeamComposition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -275,6 +256,18 @@ namespace JsonDataBaseFootball
             this.buttonFindFootballerTeamComposition.TabIndex = 4;
             this.buttonFindFootballerTeamComposition.Text = "Найти";
             this.buttonFindFootballerTeamComposition.UseVisualStyleBackColor = true;
+            // 
+            // tabPagePosition
+            // 
+            this.tabPagePosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tabPagePosition.Controls.Add(this.textBox9);
+            this.tabPagePosition.Controls.Add(this.buttonFindPosition);
+            this.tabPagePosition.Location = new System.Drawing.Point(4, 22);
+            this.tabPagePosition.Name = "tabPagePosition";
+            this.tabPagePosition.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPagePosition.Size = new System.Drawing.Size(614, 299);
+            this.tabPagePosition.TabIndex = 4;
+            this.tabPagePosition.Text = "Position";
             // 
             // textBox9
             // 
@@ -294,6 +287,19 @@ namespace JsonDataBaseFootball
             this.buttonFindPosition.TabIndex = 4;
             this.buttonFindPosition.Text = "Найти";
             this.buttonFindPosition.UseVisualStyleBackColor = true;
+            // 
+            // tabPageTeamComposition
+            // 
+            this.tabPageTeamComposition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.tabPageTeamComposition.Controls.Add(this.textBox10);
+            this.tabPageTeamComposition.Controls.Add(this.textBox11);
+            this.tabPageTeamComposition.Controls.Add(this.buttonFindTeamComposition);
+            this.tabPageTeamComposition.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTeamComposition.Name = "tabPageTeamComposition";
+            this.tabPageTeamComposition.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageTeamComposition.Size = new System.Drawing.Size(614, 299);
+            this.tabPageTeamComposition.TabIndex = 5;
+            this.tabPageTeamComposition.Text = "TeamComposition";
             // 
             // textBox10
             // 
@@ -323,6 +329,18 @@ namespace JsonDataBaseFootball
             this.buttonFindTeamComposition.Text = "Найти";
             this.buttonFindTeamComposition.UseVisualStyleBackColor = true;
             // 
+            // tabPageTeamCompositionType
+            // 
+            this.tabPageTeamCompositionType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.tabPageTeamCompositionType.Controls.Add(this.textBox13);
+            this.tabPageTeamCompositionType.Controls.Add(this.buttonFindTeamCompositionType);
+            this.tabPageTeamCompositionType.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTeamCompositionType.Name = "tabPageTeamCompositionType";
+            this.tabPageTeamCompositionType.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageTeamCompositionType.Size = new System.Drawing.Size(614, 299);
+            this.tabPageTeamCompositionType.TabIndex = 6;
+            this.tabPageTeamCompositionType.Text = "TeamCompositionType";
+            // 
             // textBox13
             // 
             this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -341,6 +359,18 @@ namespace JsonDataBaseFootball
             this.buttonFindTeamCompositionType.TabIndex = 4;
             this.buttonFindTeamCompositionType.Text = "Найти";
             this.buttonFindTeamCompositionType.UseVisualStyleBackColor = true;
+            // 
+            // tabPageTrainer
+            // 
+            this.tabPageTrainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.tabPageTrainer.Controls.Add(this.textBox15);
+            this.tabPageTrainer.Controls.Add(this.buttonFindTrainer);
+            this.tabPageTrainer.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTrainer.Name = "tabPageTrainer";
+            this.tabPageTrainer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageTrainer.Size = new System.Drawing.Size(614, 299);
+            this.tabPageTrainer.TabIndex = 7;
+            this.tabPageTrainer.Text = "Trainer";
             // 
             // textBox15
             // 
@@ -381,6 +411,8 @@ namespace JsonDataBaseFootball
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.richTextBox2);
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -394,37 +426,28 @@ namespace JsonDataBaseFootball
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
+            this.tabPage2.Size = new System.Drawing.Size(610, 317);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // button1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(4, 142);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(450, 26);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "Тип состава команды";
+            this.button1.Location = new System.Drawing.Point(7, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox3
+            // richTextBox2
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(4, 174);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(450, 26);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "Имя игрока";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.Location = new System.Drawing.Point(4, 206);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(450, 26);
-            this.textBox6.TabIndex = 6;
-            this.textBox6.Text = "Имя тренера";
+            this.richTextBox2.Location = new System.Drawing.Point(7, 37);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(597, 274);
+            this.richTextBox2.TabIndex = 1;
+            this.richTextBox2.Text = "";
             // 
             // Form1
             // 
@@ -455,6 +478,7 @@ namespace JsonDataBaseFootball
             this.tabPageTrainer.ResumeLayout(false);
             this.tabPageTrainer.PerformLayout();
             this.tabControl2.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -495,6 +519,8 @@ namespace JsonDataBaseFootball
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
