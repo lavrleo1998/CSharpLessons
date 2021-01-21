@@ -24,24 +24,46 @@ namespace JsonDataBaseFootball
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {/*
-            List<string> R = new List<string>();
+        {
 
-            R = TeamCompositionServices.GetTeamByFootballer(1);
+            List<string> R3 = new List<string>();
 
-            foreach (var item in R)
+            R3 = TeamCompositionServices.GetTeamByFootballer(1);
+
+            foreach (var item in R3)
             {
-                richTextBox2.Text += "\n"+Convert.ToString(item);
+                richTextBox2.Text += "\n" + Convert.ToString(item);
             }
-            */
-            /*
+
+
+
             List<Event> events = new List<Event>();
-            events = EventServices.GetEventsByFootballer(4);
+            events = EventServices.GetEventsByFootballer(Convert.ToInt32(textBox7.Text));
             foreach (var item in events)
             {
-                richTextBox2.Text += Convert.ToString(item.ID)+" " + Convert.ToString(item.DateTime) + " " + Convert.ToString(item.EventTypeID) + "\n";
+                richTextBox2.Text += Convert.ToString(item.ID) + " " + Convert.ToString(item.DateTime) + " " + Convert.ToString(item.EventTypeID) + "\n";
             }
-            */
+
+
+            List<string> R2 = new List<string>();
+
+            R2 = TeamCompositionServices.GetTeamByDate(dateTimePicker2.Value.Date);
+
+            foreach (var item in R2)
+            {
+                richTextBox2.Text += Convert.ToString(item) + "\n";
+            }
+
+
+            List<Event> R1 = new List<Event>();
+
+            R1 = EventServices.GetEventsByFootballerAndDate(2, dateTimePicker2.Value.Date);
+
+            foreach (var item in R1)
+            {
+                richTextBox2.Text += Convert.ToString(item.ID) + " " + Convert.ToString(item.DateTime) + " " + Convert.ToString(item.EventTypeID) + "\n";
+            }
+            
 
         }
     }

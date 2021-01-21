@@ -62,9 +62,11 @@ namespace JsonDataBaseFootball
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPageEvent.SuspendLayout();
             this.tabPageEventType.SuspendLayout();
@@ -411,6 +413,8 @@ namespace JsonDataBaseFootball
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.textBox7);
+            this.tabPage1.Controls.Add(this.dateTimePicker2);
             this.tabPage1.Controls.Add(this.richTextBox2);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -421,15 +425,13 @@ namespace JsonDataBaseFootball
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // richTextBox2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(610, 317);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.richTextBox2.Location = new System.Drawing.Point(7, 37);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(597, 274);
+            this.richTextBox2.TabIndex = 1;
+            this.richTextBox2.Text = "";
             // 
             // button1
             // 
@@ -441,13 +443,29 @@ namespace JsonDataBaseFootball
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // richTextBox2
+            // tabPage2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(7, 37);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(597, 274);
-            this.richTextBox2.TabIndex = 1;
-            this.richTextBox2.Text = "";
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(610, 317);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(88, 11);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 3;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(295, 9);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 4;
             // 
             // Form1
             // 
@@ -479,6 +497,7 @@ namespace JsonDataBaseFootball
             this.tabPageTrainer.PerformLayout();
             this.tabControl2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -521,6 +540,8 @@ namespace JsonDataBaseFootball
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TextBox textBox7;
     }
 }
 
