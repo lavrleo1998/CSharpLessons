@@ -8,9 +8,9 @@ using JsonDataBaseFootball.Entities;
 
 namespace JsonDataBaseFootball.Services
 {
-    public static class EventServices
+    public class EventServices
     {
-        public static List<Event> GetEventsByFootballer(int footballerID)
+        public List<Event> GetEventsByFootballer(int footballerID)
         {
             //Поиск футболиста c проверкой есть ли он, проверка пока не работает
             /*
@@ -26,7 +26,7 @@ namespace JsonDataBaseFootball.Services
             }*/
             //Поиск связи ФутболистСостав команды 
             var gottenFootTeamCompsList = Storage.Get<FootballerTeamComposition>();
-            List<FootballerTeamComposition> footTeamCompsList = new List<FootballerTeamComposition>();
+            var footTeamCompsList = new List<FootballerTeamComposition>();
             foreach (var item in gottenFootTeamCompsList)
             {
                 if (item.FootbollerID == footballerID)
@@ -36,7 +36,7 @@ namespace JsonDataBaseFootball.Services
             }
             //Поиск подходящих составов
             var gottenTeamCompList = Storage.Get<TeamComposition>();
-            List<TeamComposition> teamCompList = new List<TeamComposition>();
+            var teamCompList = new List<TeamComposition>();
             foreach (var item in footTeamCompsList)
             {
                 foreach (var item2 in gottenTeamCompList)
@@ -49,7 +49,7 @@ namespace JsonDataBaseFootball.Services
             }
             //Поиск событий по составам
             var gottenEventList = Storage.Get<Event>();
-            List<Event> eventList = new List<Event>();
+            var eventList = new List<Event>();
             foreach (var item in teamCompList)
             {
                 foreach (var item2 in gottenEventList)
@@ -64,10 +64,10 @@ namespace JsonDataBaseFootball.Services
             return eventList;
         }
 
-        public static List<Event> GetEventsByFootballerAndDate(int footballerID, DateTime date)
+        public List<Event> GetEventsByFootballerAndDate(int footballerID, DateTime date)
         {
             var gottenFootTeamCompsList = Storage.Get<FootballerTeamComposition>();
-            List<FootballerTeamComposition> footTeamCompsList = new List<FootballerTeamComposition>();
+            var footTeamCompsList = new List<FootballerTeamComposition>();
             foreach (var item in gottenFootTeamCompsList)
             {
                 if (item.FootbollerID == footballerID)
@@ -111,6 +111,8 @@ namespace JsonDataBaseFootball.Services
                     eventListByDate.Add(item);
                 }
             }
+
+            eventList.Where(x => x.EventTypeID == 1)
 
             return eventListByDate;
         }

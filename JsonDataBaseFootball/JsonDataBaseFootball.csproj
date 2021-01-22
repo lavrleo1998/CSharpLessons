@@ -58,6 +58,7 @@
     <Compile Include="Entities\TeamComposition.cs" />
     <Compile Include="Entities\TeamCompositionType.cs" />
     <Compile Include="Entities\Trainer.cs" />
+    <Compile Include="Entities\Type.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
