@@ -46,6 +46,8 @@ namespace JsonDataBaseFootball.Services
         {
             var listFootballer = Storage.Get<Footballer>();
             var returnListFootballer = new List<Footballer>();
+
+            returnListFootballer.Where(x => x.Position.Name.Equals("защитник"));
             foreach (var itemFootbaler in listFootballer)
             {
                 if ((ID == null || itemFootbaler.ID == ID) && (name == null || itemFootbaler.Name == name))

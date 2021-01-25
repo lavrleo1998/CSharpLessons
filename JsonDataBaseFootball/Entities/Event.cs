@@ -10,6 +10,7 @@ namespace JsonDataBaseFootball.Entities
     {
         public int ID { get; set; }
         public DateTime DateTime { get; set; }
+
         public int EventTypeID { get; set; }
         public int TeamCompositionID { get; set; }
 

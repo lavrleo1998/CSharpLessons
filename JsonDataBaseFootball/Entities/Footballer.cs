@@ -10,10 +10,19 @@ namespace JsonDataBaseFootball.Entities
     {
         public int ID { get; set; }
         public string Name { get; set; }
+        public Position Position { get; set;}
         public Footballer(int id, string name)
         {
             ID = id;
             Name = name;
+            /*Заметка Спиридона
+            Position = new Position
+            {
+                ID = 123,
+                Name = "dasdas"
+            };
+            */
+
         }
     }
 }
