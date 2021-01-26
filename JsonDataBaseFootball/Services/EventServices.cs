@@ -24,20 +24,56 @@ namespace JsonDataBaseFootball.Services
                     break;
                 }
             }*/
+
+
+
+
+
+
+
+
+
+
             //Поиск связи ФутболистСостав команды 
             var gottenFootTeamCompsList = Storage.Get<FootballerTeamComposition>();
-            var footTeamCompsList = new List<FootballerTeamComposition>();
+            
+            var fTCList1 = new List<FootballerTeamComposition>();
             foreach (var item in gottenFootTeamCompsList)
             {
                 if (item.FootbollerID == footballerID)
                 {
-                    footTeamCompsList.Add(item);
+                    fTCList1.Add(item);
                 }
             }
+
+            var fTCList = gottenFootTeamCompsList
+                .Where(x => x.FootbollerID == footballerID).Select(x => x);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             //Поиск подходящих составов
             var gottenTeamCompList = Storage.Get<TeamComposition>();
+
             var teamCompList = new List<TeamComposition>();
-            foreach (var item in footTeamCompsList)
+            foreach (var item in fTCList)
             {
                 foreach (var item2 in gottenTeamCompList)
                 {
@@ -47,6 +83,8 @@ namespace JsonDataBaseFootball.Services
                     }
                 }
             }
+            
+
             //Поиск событий по составам
             var gottenEventList = Storage.Get<Event>();
             var eventList = new List<Event>();
