@@ -1,14 +1,13 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JsonDataBaseFootball.Repository
+namespace JsonDataBaseFootball.DataBase
 {
-    public static class Storage
+    public static class Repository
     {
         public static void Save<T>(T objectForJSON)
         {
@@ -17,35 +16,17 @@ namespace JsonDataBaseFootball.Repository
             //добавляем новый объект в лист
             write.Add(objectForJSON);
             //Записываем обновленный лист в файл
-            Write(JsonConvert.SerializeObject(write), typeof(T).Name + ".txt");
+            Storage.Write(JsonConvert.SerializeObject(write), typeof(T).Name + ".json");
+            //string jsonString = JsonSerializer.Serialize<>(weatherForecast);
         }
         public static List<T> Get<T>()
         {
             //Получаем данные из файла
-            var str = Read(typeof(T).Name + ".txt");
+            var str = Storage.Read(typeof(T).Name + ".json");
             //десериализация до объекта
             var result = JsonConvert.DeserializeObject<List<T>>(str);
             //ВОзвращение объекта
             return result;
         }
-        private static void Write(string stringToWrite, string fileAddress)
-        {
-            using (StreamWriter file = new StreamWriter(fileAddress, false, System.Text.Encoding.Default))
-            {
-                file.WriteLine(stringToWrite);
-                file.Close();
-            }
-        }
-        private static string Read(string fileAddress)
-        {
-            using (StreamReader file = new StreamReader(fileAddress))
-            {
-                string result = file.ReadToEnd();
-                file.Close();
-                return result;
-            }
-        }
-
-
     }
 }

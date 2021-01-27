@@ -12,14 +12,14 @@ namespace JsonDataBaseFootball.Entities
         public DateTime DateTime { get; set; }
 
         public int EventTypeID { get; set; }
-        public int TeamCompositionID { get; set; }
+        public int TeamID { get; set; }
 
-        public Event(int id, DateTime dateTime, int eventTipeID, int teamCompositionID)
+        public Event(int id, DateTime dateTime, int eventTipeID, int teamID)
         {
             ID = id;
             DateTime = dateTime;
             EventTypeID = eventTipeID;
-            TeamCompositionID = teamCompositionID;
+            TeamID = teamID;
         }
     }
 }
