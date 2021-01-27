@@ -66,5 +66,18 @@ namespace JsonDataBaseFootball.Services
             return allEvents;
         }
 
+        public static void AddEvent()
+        {
+
+        }
+        public static void DeleteEvent()
+        {
+
+        }
+        public static void UpdateEvent()
+        {
+
+        }
+
     }
 }

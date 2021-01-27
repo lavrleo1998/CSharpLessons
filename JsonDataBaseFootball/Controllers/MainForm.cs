@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace JsonDataBaseFootball
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             ///NewDB.GenerateFiles();
@@ -47,7 +47,7 @@ namespace JsonDataBaseFootball
 
         private void buttonGetEventsByFootballerAndDate_Click(object sender, EventArgs e)
         {
-            var eventList = EventServices.GetEventsByFootballerAndDate(Convert.ToInt32(textBox5.Text), dateTimePicker1.Value.Date);
+            var eventList = EventServices.GetEventsByFootballerAndDate(Convert.ToInt32(textBox5.Text), dateTimePicker2.Value.Date);
             foreach (var item in eventList)richTextBox1.Text += Convert.ToString(item.ID) + " " + Convert.ToString(item.DateTime) + " " + Convert.ToString(item.EventTypeID) + "\n";
         }
     }

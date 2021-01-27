@@ -57,12 +57,11 @@
     <Compile Include="Entities\Team.cs" />
     <Compile Include="Entities\TeamType.cs" />
     <Compile Include="Entities\Trainer.cs" />
-    <Compile Include="Entities\Type.cs" />
-    <Compile Include="Controllers\Form1.cs">
+    <Compile Include="Controllers\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controllers\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Controllers\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,9 +69,11 @@
     <Compile Include="DataBase\Storage.cs" />
     <Compile Include="Services\EventServices.cs" />
     <Compile Include="DataBase\NewDB.cs" />
+    <Compile Include="Services\FootballerServices.cs" />
+    <Compile Include="Services\FootballerTeamServices.cs" />
     <Compile Include="Services\TeamServices.cs" />
-    <EmbeddedResource Include="Controllers\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Controllers\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
