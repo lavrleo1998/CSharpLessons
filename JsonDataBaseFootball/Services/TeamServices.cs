@@ -53,7 +53,7 @@ namespace JsonDataBaseFootball.Services
             return allTeamList;
 
         }
-        public static List<string> GetTByDate(DateTime date)
+        public static List<string> GetByDate(DateTime date)
         {
             var eventList = Repository
                 .Get<Event>()
