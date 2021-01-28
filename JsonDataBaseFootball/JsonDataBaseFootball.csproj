@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Event.cs" />
     <Compile Include="Entities\EventType.cs" />
     <Compile Include="Entities\Footballer.cs" />
@@ -69,9 +70,13 @@
     <Compile Include="DataBase\Storage.cs" />
     <Compile Include="Services\EventServices.cs" />
     <Compile Include="DataBase\NewDB.cs" />
+    <Compile Include="Services\EventTypeServices.cs" />
     <Compile Include="Services\FootballerServices.cs" />
     <Compile Include="Services\FootballerTeamServices.cs" />
+    <Compile Include="Services\PositionServices.cs" />
     <Compile Include="Services\TeamServices.cs" />
+    <Compile Include="Services\TeamTypeServices.cs" />
+    <Compile Include="Services\TrainerServices.cs" />
     <EmbeddedResource Include="Controllers\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

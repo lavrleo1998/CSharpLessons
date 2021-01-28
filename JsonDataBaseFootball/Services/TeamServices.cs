@@ -9,7 +9,13 @@ namespace JsonDataBaseFootball.Services
 {
     public static class TeamServices
     {
-        public static List<string> GetTeamByFootballer(int footballerID)
+        public static void Add(int ID, string name, int teamTypeId) =>
+            Repository.Add(new Team(ID, name, teamTypeId));
+        public static void Delete(int teamID) =>
+            Repository.Delete<Team>(teamID);
+        public static void Update(int ID, string name, int teamTypeId) =>
+            Repository.Update<Team>(new Team(ID, name, teamTypeId));
+        public static List<string> GetByFootballer(int footballerID)
         {
             //Поиск связи ФутболистСостав команды 
             var footballerTeamList = Repository
@@ -28,7 +34,7 @@ namespace JsonDataBaseFootball.Services
             }
             return allTeamList;
         }
-        public static List<string> GetTeamByTeamType(string teamTypeName)
+        public static List<string> GetByTeamType(string teamTypeName)
         {
             var teamTypeList = Repository
                 .Get<TeamType>()
@@ -47,7 +53,7 @@ namespace JsonDataBaseFootball.Services
             return allTeamList;
 
         }
-        public static List<string> GetTeamByDate(DateTime date)
+        public static List<string> GetTByDate(DateTime date)
         {
             var eventList = Repository
                 .Get<Event>()
@@ -65,18 +71,7 @@ namespace JsonDataBaseFootball.Services
             }
             return allEvent;
         }
-        public static void AddTeam()
-        {
 
-        }
-        public static void DeleteTeam()
-        {
-
-        }
-        public static void UpdateTeam()
-        {
-
-        }
 
     }
 }

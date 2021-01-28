@@ -10,7 +10,7 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-            var footballers = new List<Footballer>();
+                        var footballers = new List<Footballer>();
             footballers.Add(new Footballer("A", "AA7", new DateTime(2015, 7, 20, 18, 24, 25), 73000, 20));
             footballers.Add(new Footballer("b", "AA2", new DateTime(2015, 7, 21, 18, 30, 25), 2820000, 20));
             footballers.Add(new Footballer("A", "AA10", new DateTime(2015, 8, 20, 18, 30, 25), 2763600, 200));

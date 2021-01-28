@@ -1,4 +1,5 @@
-﻿using JsonDataBaseFootball.Entities;
+﻿using JsonDataBaseFootball.DataBase;
+using JsonDataBaseFootball.Entities;
 using JsonDataBaseFootball.Services;
 using System;
 using System.Collections.Generic;
@@ -17,8 +18,8 @@ namespace JsonDataBaseFootball
         public MainForm()
         {
             InitializeComponent();
-            ///NewDB.GenerateFiles();
-            ///NewDB.GenerateNewDB();
+            NewDB.GenerateFiles();
+            NewDB.GenerateNewDB();
         }
 
         private void buttonGetTeamByFootballer_Click(object sender, EventArgs e)

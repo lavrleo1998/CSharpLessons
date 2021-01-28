@@ -10,7 +10,14 @@ namespace JsonDataBaseFootball.Services
 {
     public static class EventServices
     {
-        public static List<Event> GetEventsByFootballer(int footballerID)
+        public static void Add(int id, DateTime dateTime, int eventTipeID, int teamID) =>
+            Repository.Add(new Event(id, dateTime, eventTipeID, teamID));
+        public static void Delete(int eventID) =>
+            Repository.Delete<Event>(eventID);
+        public static void Update(int id, DateTime dateTime, int eventTipeID, int teamID) =>
+            Repository.Update<Event>(new Event(id, dateTime, eventTipeID, teamID));
+
+        public static List<Event> GetByFootballer(int footballerID)
         {
             //Поиск связи ФутболистСостав команды 
             var footballerTeamList = Repository
@@ -38,7 +45,7 @@ namespace JsonDataBaseFootball.Services
             return allEvents;
         }
         
-        public static List<Event> GetEventsByFootballerAndDate(int footballerID, DateTime date)
+        public static List<Event> GetByFootballerAndDate(int footballerID, DateTime date)
         {
             //Поиск связи ФутболистСостав команды 
             var footballerTeamList = Repository
@@ -66,18 +73,6 @@ namespace JsonDataBaseFootball.Services
             return allEvents;
         }
 
-        public static void AddEvent()
-        {
-
-        }
-        public static void DeleteEvent()
-        {
-
-        }
-        public static void UpdateEvent()
-        {
-
-        }
-
+        
     }
 }

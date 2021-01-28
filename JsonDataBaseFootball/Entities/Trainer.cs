@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace JsonDataBaseFootball.Entities
 {
-    public class Trainer
+    public class Trainer : Entity
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
+        string Name { get; set; }
         public Trainer(int id, string name)
         {
             ID = id;
