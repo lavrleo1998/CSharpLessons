@@ -10,6 +10,17 @@ namespace JsonDataBaseFootball.Services
 {
     public static class EventServices
     {
+        public static string Download()
+        {
+            string str = "События\n";
+            foreach (var evenT in Repository.Get<Event>())
+            {
+                str += "Айди: " + evenT.ID + "; Дата: " + evenT.DateTime.ToString()
+                    + "; Тип события: " + Repository.Get<EventType>().Where(x => x.ID == evenT.EventTypeID).Select(x => x.Name).FirstOrDefault()
+                    + "; Играющий состав: " + Repository.Get<Team>().Where(x => x.ID == evenT.TeamID).Select(x => x.Name).FirstOrDefault() + "\n";
+            }
+            return str;
+        }
         public static void Add(int id, DateTime dateTime, int eventTipeID, int teamID) =>
             Repository.Add(new Event(id, dateTime, eventTipeID, teamID));
         public static void Delete(int eventID) =>
@@ -35,7 +46,7 @@ namespace JsonDataBaseFootball.Services
             }
             //Поиск подходщих событий    
             var allEvents = new List<Event>();
-            foreach(var team in allTeamList)
+            foreach (var team in allTeamList)
             {
                 var events = Repository
                     .Get<Event>()
@@ -44,7 +55,7 @@ namespace JsonDataBaseFootball.Services
             }
             return allEvents;
         }
-        
+
         public static List<Event> GetByFootballerAndDate(int footballerID, DateTime date)
         {
             //Поиск связи ФутболистСостав команды 
@@ -73,6 +84,6 @@ namespace JsonDataBaseFootball.Services
             return allEvents;
         }
 
-        
+
     }
 }

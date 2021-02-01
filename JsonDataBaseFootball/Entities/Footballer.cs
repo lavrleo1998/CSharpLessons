@@ -9,7 +9,7 @@ namespace JsonDataBaseFootball.Entities
     public class Footballer : Entity
     {
         public string Name { get; set; }
-        public Position Position { get; set;}
+        ///public Position Position { get; set;}
         public Footballer(int id, string name)
         {
             ID = id;

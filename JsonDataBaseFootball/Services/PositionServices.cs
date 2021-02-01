@@ -10,6 +10,17 @@ namespace JsonDataBaseFootball.Services
 {
     class PositionServices
     {
+        public static string Download()
+        {
+            string str = "Позиции\n";
+            foreach (var position in Repository.Get<Position>())
+            {
+                str += "Айди: " + position.ID
+                    + "; Название позиции: " + position.Name
+                    + "\n";
+            }
+            return str;
+        }
         public static void Add(int ID, string name) =>
            Repository.Add(new Position(ID, name));
         public static void Delete(int PositionID) =>

@@ -49,6 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\EventControllers.cs" />
+    <Compile Include="Controllers\EventTypeControllers.cs" />
+    <Compile Include="Controllers\Fill_inComboBox.cs" />
+    <Compile Include="Controllers\FootballerControllers.cs" />
+    <Compile Include="Controllers\FootballerTeamControllers.cs" />
+    <Compile Include="Controllers\PositionControllers.cs" />
+    <Compile Include="Controllers\TeamControllers.cs" />
+    <Compile Include="Controllers\TeamTypeControllers.cs" />
+    <Compile Include="Controllers\TrainerControllers.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Event.cs" />
     <Compile Include="Entities\EventType.cs" />

@@ -8,11 +8,12 @@ namespace JsonDataBaseFootball.Entities
 {
     public class Trainer : Entity
     {
-        string Name { get; set; }
+        public string Name { get; set; }
         public Trainer(int id, string name)
         {
             ID = id;
             Name = name;
+
         }
     }
 }

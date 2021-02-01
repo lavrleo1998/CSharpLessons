@@ -10,6 +10,19 @@ namespace JsonDataBaseFootball.Services
 {
     public static class FootballerTeamServices
     {
+        public static string Download()
+        {
+            string str = "Связь футболиста и состава\n";
+            foreach (var footballerTeam in Repository.Get<FootballerTeam>())
+            {
+                str += "Айди: " + footballerTeam.ID 
+                    + "; Состав: " + Repository.Get<Team>().Where(x => x.ID == footballerTeam.TeamID).Select(x => x.Name).FirstOrDefault()
+                    + "; Игрок: " + Repository.Get<Footballer>().Where(x => x.ID == footballerTeam.FootbollerID).Select(x => x.Name).FirstOrDefault()
+                    + "; Позиция игрока: " + Repository.Get<Position>().Where(x => x.ID == footballerTeam.PositionID).Select(x => x.Name).FirstOrDefault()
+                    + "\n";
+            }
+            return str;
+        }
         public static void Add(int id, int idF, int idTeam, int position) =>
              Repository.Add(new FootballerTeam(id, idF, idTeam, position));
         public static void Delete(int footballerTeamID) =>
