@@ -49,31 +49,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\Controller.cs" />
+    <Compile Include="Controllers\EventControllers.cs" />
+    <Compile Include="Controllers\EventTypeControllers.cs" />
+    <Compile Include="Controllers\Fill_inComboBox.cs" />
+    <Compile Include="Controllers\FootballerControllers.cs" />
+    <Compile Include="Controllers\FootballerTeamControllers.cs" />
+    <Compile Include="Controllers\PositionControllers.cs" />
+    <Compile Include="Controllers\TeamControllers.cs" />
+    <Compile Include="Controllers\TeamTypeControllers.cs" />
+    <Compile Include="Controllers\TrainerControllers.cs" />
+    <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Event.cs" />
     <Compile Include="Entities\EventType.cs" />
     <Compile Include="Entities\Footballer.cs" />
-    <Compile Include="Entities\FootballerTeamComposition.cs" />
+    <Compile Include="Entities\FootballerTeam.cs" />
     <Compile Include="Entities\Position.cs" />
-    <Compile Include="Entities\TeamComposition.cs" />
-    <Compile Include="Entities\TeamCompositionType.cs" />
+    <Compile Include="Entities\Team.cs" />
+    <Compile Include="Entities\TeamType.cs" />
     <Compile Include="Entities\Trainer.cs" />
-    <Compile Include="Entities\Type.cs" />
-    <Compile Include="Form1.cs">
+
+    <Compile Include="Controllers\MainForm.cs">
+
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Controllers\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\Storage.cs" />
+    <Compile Include="DataBase\Repository.cs" />
+    <Compile Include="DataBase\Storage.cs" />
     <Compile Include="Services\EventServices.cs" />
-    <Compile Include="Services\Get.cs" />
-    <Compile Include="Services\NewDB.cs" />
-    <Compile Include="Services\TeamCompositionServices.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="DataBase\NewDB.cs" />
+    <Compile Include="Services\EventTypeServices.cs" />
+    <Compile Include="Services\FootballerServices.cs" />
+    <Compile Include="Services\FootballerTeamServices.cs" />
+    <Compile Include="Services\PositionServices.cs" />
+    <Compile Include="Services\TeamServices.cs" />
+    <Compile Include="Services\TeamTypeServices.cs" />
+    <Compile Include="Services\TrainerServices.cs" />
+    <EmbeddedResource Include="Controllers\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
