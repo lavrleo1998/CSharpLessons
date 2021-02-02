@@ -10,9 +10,9 @@ namespace JsonDataBaseFootball.Controllers
 {
     public static class EventControllers
     {
-        public static void Method(RichTextBox richTextBoxDelete)
+        public static void Print(RichTextBox richTextBox)
         {
-            richTextBoxDelete.Text = EventTypeServices.Download();
+            richTextBox.Text = EventServices.Download();
         }
     }
 }
