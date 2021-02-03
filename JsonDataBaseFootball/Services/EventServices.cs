@@ -25,9 +25,13 @@ namespace JsonDataBaseFootball.Services
             //        + "; Играющий состав: " + Repository.Get<Team>().Where(x => x.ID == evenT.TeamID).Select(x => x.Name).FirstOrDefault() + "\n";
 
             //}
-            var a = Repository.Get<Event>().FirstOrDefault();
-
-            var str = Helper.Download(a);
+            var a = Repository.Get<Event>();
+            string str="";
+            foreach (var item in a)
+            {
+                str += Helper.Download(item);
+            }
+            
             return str;
         }
         public static void Add(int id, DateTime dateTime, int eventTipeID, int teamID) 
