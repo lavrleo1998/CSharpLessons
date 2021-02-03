@@ -12,7 +12,7 @@ namespace JsonDataBaseFootball.Controllers
     {
         public static void Print(RichTextBox richTextBox)
         {
-            richTextBox.Text = FootballerServices.Download();
+            richTextBox.Text = FootballerTeamServices.Download();
         }
     }
 }

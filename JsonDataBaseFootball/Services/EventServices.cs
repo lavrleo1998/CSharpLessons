@@ -8,16 +8,20 @@ using JsonDataBaseFootball.Entities;
 
 namespace JsonDataBaseFootball.Services
 {
-    public static class EventServices
+    public class EventServices
     {
+
         public static string Download()
+
         {
             string str = "События\n";
             foreach (var evenT in Repository.Get<Event>())
             {
+
                 str += "Айди: " + evenT.ID + "; Дата: " + evenT.DateTime.ToString()
                     + "; Тип события: " + Repository.Get<EventType>().Where(x => x.ID == evenT.EventTypeID).Select(x => x.Name).FirstOrDefault()
                     + "; Играющий состав: " + Repository.Get<Team>().Where(x => x.ID == evenT.TeamID).Select(x => x.Name).FirstOrDefault() + "\n";
+
             }
             return str;
         }
@@ -41,17 +45,22 @@ namespace JsonDataBaseFootball.Services
                 .Where(x => x.FootbollerID == footballerID)
                 .Select(x => x);
             //Поиск подходящих составов
+
             var allTeamList = new List<Team>();
             foreach (var relations in footballerTeamList)
+
             {
                 var teamList = Repository
                     .Get<Team>()
                     .Where(x => x.ID == relations.TeamID);
                 allTeamList.AddRange(teamList);
             }
+
             //Поиск подходщих событий    
             var allEvents = new List<Event>();
             foreach (var team in allTeamList)
+
+
             {
                 var events = Repository
                     .Get<Event>()
@@ -60,6 +69,7 @@ namespace JsonDataBaseFootball.Services
             }
             return allEvents;
         }
+
         public static List<Event> GetByFootballerAndDate(int footballerID, DateTime date)
         {
             //Поиск связи ФутболистСостав команды 
@@ -67,6 +77,7 @@ namespace JsonDataBaseFootball.Services
                 .Get<FootballerTeam>()
                 .Where(x => x.FootbollerID == footballerID)
                 .Select(x => x);
+
             //Поиск подходящих составов
             var allTeamList = new List<Team>();
             foreach (var relations in footballerTeamList)
@@ -86,6 +97,7 @@ namespace JsonDataBaseFootball.Services
                 allEvents.AddRange(events);
             }
             return allEvents;
+
         }
     }
 }

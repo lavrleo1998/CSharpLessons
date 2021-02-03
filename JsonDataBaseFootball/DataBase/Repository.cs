@@ -24,15 +24,10 @@ namespace JsonDataBaseFootball.DataBase
         public static void Update<T>(T obj) where T : Entity
         {
             var listForChange = Repository.Get<T>();
-
-            listForChange
-                .Insert(listForChange
-                .IndexOf(listForChange
-                .Where(x => x.ID == obj.ID)
-                .First()),
-                listForChange
-                .Where(x => x.ID == obj.ID)
-                .First());
+            /////баг вот тут, из-за неотслеживаемых айдтшников,
+            ///но они же могут быть не нумерными, так что надо добавить
+            ///поиск догосамого объекта и в нем менять, не забудь исправить
+            listForChange[obj.ID] = obj;
 
             Storage.Write(JsonConvert.SerializeObject(listForChange), typeof(T).Name + ".json");
         }
