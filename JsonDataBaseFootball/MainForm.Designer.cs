@@ -30,45 +30,47 @@ namespace JsonDataBaseFootball
         private void InitializeComponent()
         {
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.comboBoxChangePositionForFootTeam = new System.Windows.Forms.ComboBox();
+            this.comboBoxFootTeamId = new System.Windows.Forms.ComboBox();
+            this.comboBoxEventID = new System.Windows.Forms.ComboBox();
+            this.comboBoxTeamID = new System.Windows.Forms.ComboBox();
+            this.comboBoxChangeEntityID = new System.Windows.Forms.ComboBox();
+            this.comboBoxTeamIDForFT = new System.Windows.Forms.ComboBox();
+            this.comboBoxFootbollerID = new System.Windows.Forms.ComboBox();
+            this.comboBoxChangeTeamForEvent = new System.Windows.Forms.ComboBox();
+            this.comboBoxChangeEventType = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerChangeEvent = new System.Windows.Forms.DateTimePicker();
+            this.buttonChangeFootTeam = new System.Windows.Forms.Button();
+            this.buttonChangeEvent = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.comboBoxChangeTeamTypeForTeam = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.textBoxChangeTeamName = new System.Windows.Forms.TextBox();
+            this.textBoxChangeEntityName = new System.Windows.Forms.TextBox();
+            this.buttonChangeTeam = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.button8 = new System.Windows.Forms.Button();
+            this.buttonChange = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.comboBoxDeleteByID = new System.Windows.Forms.ComboBox();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.comboBoxAddPositionForFT = new System.Windows.Forms.ComboBox();
+            this.comboBoxAddTeamForFT = new System.Windows.Forms.ComboBox();
+            this.comboBoxAddFootballerForFT = new System.Windows.Forms.ComboBox();
+            this.comboBoxAddEntiti = new System.Windows.Forms.ComboBox();
+            this.comboBoxAddEventType = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerAdd = new System.Windows.Forms.DateTimePicker();
+            this.buttonAddFootTeam = new System.Windows.Forms.Button();
+            this.buttonAddEvent = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.comboBoxAddTeamTypeForNewTeam = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.button12 = new System.Windows.Forms.Button();
+            this.textBoxAddNameTeam = new System.Windows.Forms.TextBox();
+            this.textBoxAddNameEntites = new System.Windows.Forms.TextBox();
+            this.buttonAddTeam = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
-            this.button13 = new System.Windows.Forms.Button();
+            this.comboBoxAddEntites = new System.Windows.Forms.ComboBox();
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -86,7 +88,7 @@ namespace JsonDataBaseFootball
             this.buttonGetEventsByFootballer = new System.Windows.Forms.Button();
             this.buttonGetEventsByFootballerAndDate = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.richTextBoxDelete = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxMain = new System.Windows.Forms.RichTextBox();
             this.comboBoxDownload = new System.Windows.Forms.ComboBox();
             this.tabPage4.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -98,25 +100,26 @@ namespace JsonDataBaseFootball
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.tabPage4.Controls.Add(this.comboBox20);
-            this.tabPage4.Controls.Add(this.comboBox19);
-            this.tabPage4.Controls.Add(this.comboBox18);
-            this.tabPage4.Controls.Add(this.comboBox6);
-            this.tabPage4.Controls.Add(this.comboBox7);
-            this.tabPage4.Controls.Add(this.comboBox8);
-            this.tabPage4.Controls.Add(this.comboBox9);
-            this.tabPage4.Controls.Add(this.dateTimePicker4);
-            this.tabPage4.Controls.Add(this.button2);
-            this.tabPage4.Controls.Add(this.button6);
+            this.tabPage4.Controls.Add(this.comboBoxChangePositionForFootTeam);
+            this.tabPage4.Controls.Add(this.comboBoxFootTeamId);
+            this.tabPage4.Controls.Add(this.comboBoxEventID);
+            this.tabPage4.Controls.Add(this.comboBoxTeamID);
+            this.tabPage4.Controls.Add(this.comboBoxChangeEntityID);
+            this.tabPage4.Controls.Add(this.comboBoxTeamIDForFT);
+            this.tabPage4.Controls.Add(this.comboBoxFootbollerID);
+            this.tabPage4.Controls.Add(this.comboBoxChangeTeamForEvent);
+            this.tabPage4.Controls.Add(this.comboBoxChangeEventType);
+            this.tabPage4.Controls.Add(this.dateTimePickerChangeEvent);
+            this.tabPage4.Controls.Add(this.buttonChangeFootTeam);
+            this.tabPage4.Controls.Add(this.buttonChangeEvent);
             this.tabPage4.Controls.Add(this.label14);
-            this.tabPage4.Controls.Add(this.comboBox10);
+            this.tabPage4.Controls.Add(this.comboBoxChangeTeamTypeForTeam);
             this.tabPage4.Controls.Add(this.label15);
-            this.tabPage4.Controls.Add(this.textBox7);
-            this.tabPage4.Controls.Add(this.textBox8);
-            this.tabPage4.Controls.Add(this.button7);
+            this.tabPage4.Controls.Add(this.textBoxChangeTeamName);
+            this.tabPage4.Controls.Add(this.textBoxChangeEntityName);
+            this.tabPage4.Controls.Add(this.buttonChangeTeam);
             this.tabPage4.Controls.Add(this.label16);
-            this.tabPage4.Controls.Add(this.comboBox15);
-            this.tabPage4.Controls.Add(this.button8);
+            this.tabPage4.Controls.Add(this.buttonChange);
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -124,86 +127,104 @@ namespace JsonDataBaseFootball
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Изменить";
             // 
-            // comboBox20
+            // comboBoxChangePositionForFootTeam
             // 
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(180, 73);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(106, 28);
-            this.comboBox20.TabIndex = 103;
+            this.comboBoxChangePositionForFootTeam.FormattingEnabled = true;
+            this.comboBoxChangePositionForFootTeam.Location = new System.Drawing.Point(727, 119);
+            this.comboBoxChangePositionForFootTeam.Name = "comboBoxChangePositionForFootTeam";
+            this.comboBoxChangePositionForFootTeam.Size = new System.Drawing.Size(157, 28);
+            this.comboBoxChangePositionForFootTeam.TabIndex = 105;
             // 
-            // comboBox19
+            // comboBoxFootTeamId
             // 
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(167, 39);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(106, 28);
-            this.comboBox19.TabIndex = 102;
+            this.comboBoxFootTeamId.FormattingEnabled = true;
+            this.comboBoxFootTeamId.Location = new System.Drawing.Point(292, 119);
+            this.comboBoxFootTeamId.Name = "comboBoxFootTeamId";
+            this.comboBoxFootTeamId.Size = new System.Drawing.Size(106, 28);
+            this.comboBoxFootTeamId.TabIndex = 104;
             // 
-            // comboBox18
+            // comboBoxEventID
             // 
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Location = new System.Drawing.Point(260, 6);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(106, 28);
-            this.comboBox18.TabIndex = 101;
+            this.comboBoxEventID.FormattingEnabled = true;
+            this.comboBoxEventID.Location = new System.Drawing.Point(180, 73);
+            this.comboBoxEventID.Name = "comboBoxEventID";
+            this.comboBoxEventID.Size = new System.Drawing.Size(106, 28);
+            this.comboBoxEventID.TabIndex = 103;
             // 
-            // comboBox6
+            // comboBoxTeamID
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(557, 107);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(157, 28);
-            this.comboBox6.TabIndex = 100;
+            this.comboBoxTeamID.FormattingEnabled = true;
+            this.comboBoxTeamID.Location = new System.Drawing.Point(167, 39);
+            this.comboBoxTeamID.Name = "comboBoxTeamID";
+            this.comboBoxTeamID.Size = new System.Drawing.Size(106, 28);
+            this.comboBoxTeamID.TabIndex = 102;
             // 
-            // comboBox7
+            // comboBoxChangeEntityID
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(394, 107);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(157, 28);
-            this.comboBox7.TabIndex = 99;
+            this.comboBoxChangeEntityID.FormattingEnabled = true;
+            this.comboBoxChangeEntityID.Location = new System.Drawing.Point(113, 7);
+            this.comboBoxChangeEntityID.Name = "comboBoxChangeEntityID";
+            this.comboBoxChangeEntityID.Size = new System.Drawing.Size(106, 28);
+            this.comboBoxChangeEntityID.TabIndex = 101;
             // 
-            // comboBox8
+            // comboBoxTeamIDForFT
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(661, 73);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(157, 28);
-            this.comboBox8.TabIndex = 98;
+            this.comboBoxTeamIDForFT.FormattingEnabled = true;
+            this.comboBoxTeamIDForFT.Location = new System.Drawing.Point(403, 119);
+            this.comboBoxTeamIDForFT.Name = "comboBoxTeamIDForFT";
+            this.comboBoxTeamIDForFT.Size = new System.Drawing.Size(157, 28);
+            this.comboBoxTeamIDForFT.TabIndex = 100;
             // 
-            // comboBox9
+            // comboBoxFootbollerID
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(498, 73);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(157, 28);
-            this.comboBox9.TabIndex = 97;
+            this.comboBoxFootbollerID.FormattingEnabled = true;
+            this.comboBoxFootbollerID.Location = new System.Drawing.Point(566, 119);
+            this.comboBoxFootbollerID.Name = "comboBoxFootbollerID";
+            this.comboBoxFootbollerID.Size = new System.Drawing.Size(157, 28);
+            this.comboBoxFootbollerID.TabIndex = 99;
             // 
-            // dateTimePicker4
+            // comboBoxChangeTeamForEvent
             // 
-            this.dateTimePicker4.Location = new System.Drawing.Point(292, 73);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(200, 26);
-            this.dateTimePicker4.TabIndex = 96;
+            this.comboBoxChangeTeamForEvent.FormattingEnabled = true;
+            this.comboBoxChangeTeamForEvent.Location = new System.Drawing.Point(661, 73);
+            this.comboBoxChangeTeamForEvent.Name = "comboBoxChangeTeamForEvent";
+            this.comboBoxChangeTeamForEvent.Size = new System.Drawing.Size(157, 28);
+            this.comboBoxChangeTeamForEvent.TabIndex = 98;
             // 
-            // button2
+            // comboBoxChangeEventType
             // 
-            this.button2.Location = new System.Drawing.Point(9, 107);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(378, 30);
-            this.button2.TabIndex = 95;
-            this.button2.Text = "Переопределить футболиста в другой состав";
-            this.button2.UseVisualStyleBackColor = true;
+            this.comboBoxChangeEventType.FormattingEnabled = true;
+            this.comboBoxChangeEventType.Location = new System.Drawing.Point(498, 73);
+            this.comboBoxChangeEventType.Name = "comboBoxChangeEventType";
+            this.comboBoxChangeEventType.Size = new System.Drawing.Size(157, 28);
+            this.comboBoxChangeEventType.TabIndex = 97;
             // 
-            // button6
+            // dateTimePickerChangeEvent
             // 
-            this.button6.Location = new System.Drawing.Point(10, 71);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(164, 30);
-            this.button6.TabIndex = 94;
-            this.button6.Text = "Изменить Событие";
-            this.button6.UseVisualStyleBackColor = true;
+            this.dateTimePickerChangeEvent.Location = new System.Drawing.Point(292, 73);
+            this.dateTimePickerChangeEvent.Name = "dateTimePickerChangeEvent";
+            this.dateTimePickerChangeEvent.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePickerChangeEvent.TabIndex = 96;
+            // 
+            // buttonChangeFootTeam
+            // 
+            this.buttonChangeFootTeam.Location = new System.Drawing.Point(9, 107);
+            this.buttonChangeFootTeam.Name = "buttonChangeFootTeam";
+            this.buttonChangeFootTeam.Size = new System.Drawing.Size(277, 51);
+            this.buttonChangeFootTeam.TabIndex = 95;
+            this.buttonChangeFootTeam.Text = "Переопределить футболиста в другой состав";
+            this.buttonChangeFootTeam.UseVisualStyleBackColor = true;
+            this.buttonChangeFootTeam.Click += new System.EventHandler(this.buttonChangeFootTeam_Click);
+            // 
+            // buttonChangeEvent
+            // 
+            this.buttonChangeEvent.Location = new System.Drawing.Point(10, 71);
+            this.buttonChangeEvent.Name = "buttonChangeEvent";
+            this.buttonChangeEvent.Size = new System.Drawing.Size(164, 30);
+            this.buttonChangeEvent.TabIndex = 94;
+            this.buttonChangeEvent.Text = "Изменить Событие";
+            this.buttonChangeEvent.UseVisualStyleBackColor = true;
+            this.buttonChangeEvent.Click += new System.EventHandler(this.buttonChangeEvent_Click);
             // 
             // label14
             // 
@@ -214,13 +235,13 @@ namespace JsonDataBaseFootball
             this.label14.TabIndex = 93;
             this.label14.Text = "Новый тип состава";
             // 
-            // comboBox10
+            // comboBoxChangeTeamTypeForTeam
             // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(597, 41);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(157, 28);
-            this.comboBox10.TabIndex = 92;
+            this.comboBoxChangeTeamTypeForTeam.FormattingEnabled = true;
+            this.comboBoxChangeTeamTypeForTeam.Location = new System.Drawing.Point(597, 41);
+            this.comboBoxChangeTeamTypeForTeam.Name = "comboBoxChangeTeamTypeForTeam";
+            this.comboBoxChangeTeamTypeForTeam.Size = new System.Drawing.Size(157, 28);
+            this.comboBoxChangeTeamTypeForTeam.TabIndex = 92;
             // 
             // label15
             // 
@@ -231,54 +252,48 @@ namespace JsonDataBaseFootball
             this.label15.TabIndex = 91;
             this.label15.Text = "Новое название";
             // 
-            // textBox7
+            // textBoxChangeTeamName
             // 
-            this.textBox7.Location = new System.Drawing.Point(279, 41);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(171, 26);
-            this.textBox7.TabIndex = 90;
+            this.textBoxChangeTeamName.Location = new System.Drawing.Point(279, 41);
+            this.textBoxChangeTeamName.Name = "textBoxChangeTeamName";
+            this.textBoxChangeTeamName.Size = new System.Drawing.Size(171, 26);
+            this.textBoxChangeTeamName.TabIndex = 90;
             // 
-            // textBox8
+            // textBoxChangeEntityName
             // 
-            this.textBox8.Location = new System.Drawing.Point(372, 6);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(171, 26);
-            this.textBox8.TabIndex = 87;
+            this.textBoxChangeEntityName.Location = new System.Drawing.Point(225, 7);
+            this.textBoxChangeEntityName.Name = "textBoxChangeEntityName";
+            this.textBoxChangeEntityName.Size = new System.Drawing.Size(171, 26);
+            this.textBoxChangeEntityName.TabIndex = 87;
             // 
-            // button7
+            // buttonChangeTeam
             // 
-            this.button7.Location = new System.Drawing.Point(9, 39);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(152, 28);
-            this.button7.TabIndex = 89;
-            this.button7.Text = "Изменить Состав";
-            this.button7.UseVisualStyleBackColor = true;
+            this.buttonChangeTeam.Location = new System.Drawing.Point(9, 39);
+            this.buttonChangeTeam.Name = "buttonChangeTeam";
+            this.buttonChangeTeam.Size = new System.Drawing.Size(152, 28);
+            this.buttonChangeTeam.TabIndex = 89;
+            this.buttonChangeTeam.Text = "Изменить Состав";
+            this.buttonChangeTeam.UseVisualStyleBackColor = true;
+            this.buttonChangeTeam.Click += new System.EventHandler(this.buttonChangeTeam_Click);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(549, 9);
+            this.label16.Location = new System.Drawing.Point(402, 10);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(165, 20);
             this.label16.TabIndex = 88;
             this.label16.Text = "Новое имя/название";
             // 
-            // comboBox15
+            // buttonChange
             // 
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(110, 6);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(144, 28);
-            this.comboBox15.TabIndex = 86;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(9, 6);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(95, 29);
-            this.button8.TabIndex = 85;
-            this.button8.Text = "Изменить";
-            this.button8.UseVisualStyleBackColor = true;
+            this.buttonChange.Location = new System.Drawing.Point(9, 6);
+            this.buttonChange.Name = "buttonChange";
+            this.buttonChange.Size = new System.Drawing.Size(95, 29);
+            this.buttonChange.TabIndex = 85;
+            this.buttonChange.Text = "Изменить";
+            this.buttonChange.UseVisualStyleBackColor = true;
+            this.buttonChange.Click += new System.EventHandler(this.buttonChange_Click);
             // 
             // tabPage3
             // 
@@ -313,22 +328,23 @@ namespace JsonDataBaseFootball
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.tabPage2.Controls.Add(this.comboBox1);
-            this.tabPage2.Controls.Add(this.comboBox3);
-            this.tabPage2.Controls.Add(this.comboBox4);
-            this.tabPage2.Controls.Add(this.comboBox5);
-            this.tabPage2.Controls.Add(this.dateTimePicker5);
-            this.tabPage2.Controls.Add(this.button10);
-            this.tabPage2.Controls.Add(this.button11);
+            this.tabPage2.Controls.Add(this.comboBoxAddPositionForFT);
+            this.tabPage2.Controls.Add(this.comboBoxAddTeamForFT);
+            this.tabPage2.Controls.Add(this.comboBoxAddFootballerForFT);
+            this.tabPage2.Controls.Add(this.comboBoxAddEntiti);
+            this.tabPage2.Controls.Add(this.comboBoxAddEventType);
+            this.tabPage2.Controls.Add(this.dateTimePickerAdd);
+            this.tabPage2.Controls.Add(this.buttonAddFootTeam);
+            this.tabPage2.Controls.Add(this.buttonAddEvent);
             this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.comboBox16);
+            this.tabPage2.Controls.Add(this.comboBoxAddTeamTypeForNewTeam);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.textBox9);
-            this.tabPage2.Controls.Add(this.textBox10);
-            this.tabPage2.Controls.Add(this.button12);
+            this.tabPage2.Controls.Add(this.textBoxAddNameTeam);
+            this.tabPage2.Controls.Add(this.textBoxAddNameEntites);
+            this.tabPage2.Controls.Add(this.buttonAddTeam);
             this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.comboBox21);
-            this.tabPage2.Controls.Add(this.button13);
+            this.tabPage2.Controls.Add(this.comboBoxAddEntites);
+            this.tabPage2.Controls.Add(this.buttonAdd);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -336,62 +352,72 @@ namespace JsonDataBaseFootball
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Добавить";
             // 
-            // comboBox1
+            // comboBoxAddPositionForFT
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(446, 109);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(157, 28);
-            this.comboBox1.TabIndex = 98;
+            this.comboBoxAddPositionForFT.FormattingEnabled = true;
+            this.comboBoxAddPositionForFT.Location = new System.Drawing.Point(609, 109);
+            this.comboBoxAddPositionForFT.Name = "comboBoxAddPositionForFT";
+            this.comboBoxAddPositionForFT.Size = new System.Drawing.Size(157, 28);
+            this.comboBoxAddPositionForFT.TabIndex = 99;
             // 
-            // comboBox3
+            // comboBoxAddTeamForFT
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(283, 109);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(157, 28);
-            this.comboBox3.TabIndex = 97;
+            this.comboBoxAddTeamForFT.FormattingEnabled = true;
+            this.comboBoxAddTeamForFT.Location = new System.Drawing.Point(446, 109);
+            this.comboBoxAddTeamForFT.Name = "comboBoxAddTeamForFT";
+            this.comboBoxAddTeamForFT.Size = new System.Drawing.Size(157, 28);
+            this.comboBoxAddTeamForFT.TabIndex = 98;
             // 
-            // comboBox4
+            // comboBoxAddFootballerForFT
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(544, 75);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(157, 28);
-            this.comboBox4.TabIndex = 96;
+            this.comboBoxAddFootballerForFT.FormattingEnabled = true;
+            this.comboBoxAddFootballerForFT.Location = new System.Drawing.Point(283, 109);
+            this.comboBoxAddFootballerForFT.Name = "comboBoxAddFootballerForFT";
+            this.comboBoxAddFootballerForFT.Size = new System.Drawing.Size(157, 28);
+            this.comboBoxAddFootballerForFT.TabIndex = 97;
             // 
-            // comboBox5
+            // comboBoxAddEntiti
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(381, 75);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(157, 28);
-            this.comboBox5.TabIndex = 95;
+            this.comboBoxAddEntiti.FormattingEnabled = true;
+            this.comboBoxAddEntiti.Location = new System.Drawing.Point(544, 75);
+            this.comboBoxAddEntiti.Name = "comboBoxAddEntiti";
+            this.comboBoxAddEntiti.Size = new System.Drawing.Size(157, 28);
+            this.comboBoxAddEntiti.TabIndex = 96;
             // 
-            // dateTimePicker5
+            // comboBoxAddEventType
             // 
-            this.dateTimePicker5.Location = new System.Drawing.Point(175, 75);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(200, 26);
-            this.dateTimePicker5.TabIndex = 94;
+            this.comboBoxAddEventType.FormattingEnabled = true;
+            this.comboBoxAddEventType.Location = new System.Drawing.Point(381, 75);
+            this.comboBoxAddEventType.Name = "comboBoxAddEventType";
+            this.comboBoxAddEventType.Size = new System.Drawing.Size(157, 28);
+            this.comboBoxAddEventType.TabIndex = 95;
             // 
-            // button10
+            // dateTimePickerAdd
             // 
-            this.button10.Location = new System.Drawing.Point(5, 107);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(272, 30);
-            this.button10.TabIndex = 93;
-            this.button10.Text = "Добавить футболиста в состав";
-            this.button10.UseVisualStyleBackColor = true;
+            this.dateTimePickerAdd.Location = new System.Drawing.Point(175, 75);
+            this.dateTimePickerAdd.Name = "dateTimePickerAdd";
+            this.dateTimePickerAdd.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePickerAdd.TabIndex = 94;
             // 
-            // button11
+            // buttonAddFootTeam
             // 
-            this.button11.Location = new System.Drawing.Point(5, 73);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(164, 28);
-            this.button11.TabIndex = 92;
-            this.button11.Text = "Добавить Событие";
-            this.button11.UseVisualStyleBackColor = true;
+            this.buttonAddFootTeam.Location = new System.Drawing.Point(5, 107);
+            this.buttonAddFootTeam.Name = "buttonAddFootTeam";
+            this.buttonAddFootTeam.Size = new System.Drawing.Size(272, 30);
+            this.buttonAddFootTeam.TabIndex = 93;
+            this.buttonAddFootTeam.Text = "Добавить футболиста в состав";
+            this.buttonAddFootTeam.UseVisualStyleBackColor = true;
+            this.buttonAddFootTeam.Click += new System.EventHandler(this.buttonAddFootTeam_Click);
+            // 
+            // buttonAddEvent
+            // 
+            this.buttonAddEvent.Location = new System.Drawing.Point(5, 73);
+            this.buttonAddEvent.Name = "buttonAddEvent";
+            this.buttonAddEvent.Size = new System.Drawing.Size(164, 28);
+            this.buttonAddEvent.TabIndex = 92;
+            this.buttonAddEvent.Text = "Добавить Событие";
+            this.buttonAddEvent.UseVisualStyleBackColor = true;
+            this.buttonAddEvent.Click += new System.EventHandler(this.buttonAddEvent_Click);
             // 
             // label4
             // 
@@ -402,13 +428,13 @@ namespace JsonDataBaseFootball
             this.label4.TabIndex = 91;
             this.label4.Text = "Выберите тип состава";
             // 
-            // comboBox16
+            // comboBoxAddTeamTypeForNewTeam
             // 
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Location = new System.Drawing.Point(565, 41);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(157, 28);
-            this.comboBox16.TabIndex = 90;
+            this.comboBoxAddTeamTypeForNewTeam.FormattingEnabled = true;
+            this.comboBoxAddTeamTypeForNewTeam.Location = new System.Drawing.Point(565, 41);
+            this.comboBoxAddTeamTypeForNewTeam.Name = "comboBoxAddTeamTypeForNewTeam";
+            this.comboBoxAddTeamTypeForNewTeam.Size = new System.Drawing.Size(157, 28);
+            this.comboBoxAddTeamTypeForNewTeam.TabIndex = 90;
             // 
             // label5
             // 
@@ -419,28 +445,29 @@ namespace JsonDataBaseFootball
             this.label5.TabIndex = 89;
             this.label5.Text = "Укажите название состава";
             // 
-            // textBox9
+            // textBoxAddNameTeam
             // 
-            this.textBox9.Location = new System.Drawing.Point(163, 41);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(171, 26);
-            this.textBox9.TabIndex = 88;
+            this.textBoxAddNameTeam.Location = new System.Drawing.Point(163, 41);
+            this.textBoxAddNameTeam.Name = "textBoxAddNameTeam";
+            this.textBoxAddNameTeam.Size = new System.Drawing.Size(171, 26);
+            this.textBoxAddNameTeam.TabIndex = 88;
             // 
-            // textBox10
+            // textBoxAddNameEntites
             // 
-            this.textBox10.Location = new System.Drawing.Point(256, 7);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(171, 26);
-            this.textBox10.TabIndex = 85;
+            this.textBoxAddNameEntites.Location = new System.Drawing.Point(256, 7);
+            this.textBoxAddNameEntites.Name = "textBoxAddNameEntites";
+            this.textBoxAddNameEntites.Size = new System.Drawing.Size(171, 26);
+            this.textBoxAddNameEntites.TabIndex = 85;
             // 
-            // button12
+            // buttonAddTeam
             // 
-            this.button12.Location = new System.Drawing.Point(5, 41);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(152, 26);
-            this.button12.TabIndex = 87;
-            this.button12.Text = "Добавить Состав";
-            this.button12.UseVisualStyleBackColor = true;
+            this.buttonAddTeam.Location = new System.Drawing.Point(5, 41);
+            this.buttonAddTeam.Name = "buttonAddTeam";
+            this.buttonAddTeam.Size = new System.Drawing.Size(152, 26);
+            this.buttonAddTeam.TabIndex = 87;
+            this.buttonAddTeam.Text = "Добавить Состав";
+            this.buttonAddTeam.UseVisualStyleBackColor = true;
+            this.buttonAddTeam.Click += new System.EventHandler(this.buttonAddTeam_Click);
             // 
             // label6
             // 
@@ -451,22 +478,23 @@ namespace JsonDataBaseFootball
             this.label6.TabIndex = 86;
             this.label6.Text = "Укажите имя/название добавляемой сущности";
             // 
-            // comboBox21
+            // comboBoxAddEntites
             // 
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Location = new System.Drawing.Point(106, 6);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(144, 28);
-            this.comboBox21.TabIndex = 84;
+            this.comboBoxAddEntites.FormattingEnabled = true;
+            this.comboBoxAddEntites.Location = new System.Drawing.Point(106, 6);
+            this.comboBoxAddEntites.Name = "comboBoxAddEntites";
+            this.comboBoxAddEntites.Size = new System.Drawing.Size(144, 28);
+            this.comboBoxAddEntites.TabIndex = 84;
             // 
-            // button13
+            // buttonAdd
             // 
-            this.button13.Location = new System.Drawing.Point(5, 6);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(95, 29);
-            this.button13.TabIndex = 83;
-            this.button13.Text = "Добавить";
-            this.button13.UseVisualStyleBackColor = true;
+            this.buttonAdd.Location = new System.Drawing.Point(5, 6);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(95, 29);
+            this.buttonAdd.TabIndex = 83;
+            this.buttonAdd.Text = "Добавить";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // tabPage1
             // 
@@ -649,14 +677,14 @@ namespace JsonDataBaseFootball
             this.tabControl1.Size = new System.Drawing.Size(936, 353);
             this.tabControl1.TabIndex = 17;
             // 
-            // richTextBoxDelete
+            // richTextBoxMain
             // 
-            this.richTextBoxDelete.Font = new System.Drawing.Font("Rubik", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxDelete.Location = new System.Drawing.Point(12, 46);
-            this.richTextBoxDelete.Name = "richTextBoxDelete";
-            this.richTextBoxDelete.Size = new System.Drawing.Size(936, 386);
-            this.richTextBoxDelete.TabIndex = 61;
-            this.richTextBoxDelete.Text = "";
+            this.richTextBoxMain.Font = new System.Drawing.Font("Rubik", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxMain.Location = new System.Drawing.Point(12, 46);
+            this.richTextBoxMain.Name = "richTextBoxMain";
+            this.richTextBoxMain.Size = new System.Drawing.Size(936, 386);
+            this.richTextBoxMain.TabIndex = 61;
+            this.richTextBoxMain.Text = "";
             // 
             // comboBoxDownload
             // 
@@ -674,7 +702,7 @@ namespace JsonDataBaseFootball
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(960, 803);
-            this.Controls.Add(this.richTextBoxDelete);
+            this.Controls.Add(this.richTextBoxMain);
             this.Controls.Add(this.comboBoxDownload);
             this.Controls.Add(this.tabControl1);
             this.Name = "MainForm";
@@ -695,23 +723,22 @@ namespace JsonDataBaseFootball
         #endregion
 
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.ComboBox comboBox18;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ComboBox comboBoxChangeEntityID;
+        private System.Windows.Forms.ComboBox comboBoxTeamIDForFT;
+        private System.Windows.Forms.ComboBox comboBoxFootbollerID;
+        private System.Windows.Forms.ComboBox comboBoxChangeTeamForEvent;
+        private System.Windows.Forms.ComboBox comboBoxChangeEventType;
+        private System.Windows.Forms.DateTimePicker dateTimePickerChangeEvent;
+        private System.Windows.Forms.Button buttonChangeFootTeam;
+        private System.Windows.Forms.Button buttonChangeEvent;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox comboBoxChangeTeamTypeForTeam;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox textBoxChangeTeamName;
+        private System.Windows.Forms.TextBox textBoxChangeEntityName;
+        private System.Windows.Forms.Button buttonChangeTeam;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button buttonChange;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.TabPage tabPage2;
@@ -732,27 +759,30 @@ namespace JsonDataBaseFootball
         private System.Windows.Forms.Button buttonGetEventsByFootballer;
         private System.Windows.Forms.Button buttonGetEventsByFootballerAndDate;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.ComboBox comboBoxEventID;
+        private System.Windows.Forms.ComboBox comboBoxTeamID;
         private System.Windows.Forms.ComboBox comboBoxDeleteByID;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.ComboBox comboBoxAddTeamForFT;
+        private System.Windows.Forms.ComboBox comboBoxAddFootballerForFT;
+        private System.Windows.Forms.ComboBox comboBoxAddEntiti;
+        private System.Windows.Forms.ComboBox comboBoxAddEventType;
+        private System.Windows.Forms.DateTimePicker dateTimePickerAdd;
+        private System.Windows.Forms.Button buttonAddFootTeam;
+        private System.Windows.Forms.Button buttonAddEvent;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox16;
+        private System.Windows.Forms.ComboBox comboBoxAddTeamTypeForNewTeam;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.TextBox textBoxAddNameTeam;
+        private System.Windows.Forms.TextBox textBoxAddNameEntites;
+        private System.Windows.Forms.Button buttonAddTeam;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox21;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.RichTextBox richTextBoxDelete;
+        private System.Windows.Forms.ComboBox comboBoxAddEntites;
+        private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.RichTextBox richTextBoxMain;
         private System.Windows.Forms.ComboBox comboBoxDownload;
+        private System.Windows.Forms.ComboBox comboBoxFootTeamId;
+        private System.Windows.Forms.ComboBox comboBoxChangePositionForFootTeam;
+        private System.Windows.Forms.ComboBox comboBoxAddPositionForFT;
     }
 }
 

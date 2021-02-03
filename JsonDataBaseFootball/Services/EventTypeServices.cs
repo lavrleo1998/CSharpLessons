@@ -18,6 +18,7 @@ namespace JsonDataBaseFootball.Services
                 str += "Айди: " + evenType.ID + "; Название типа: " + evenType.Name + "\n";
             }
             return str;
+
         }
         public static void Add(int ID, string name) => Repository.Add(new EventType(ID, name));
         public static void Delete(int eventTypeID) => Repository.Delete<EventType>(eventTypeID);

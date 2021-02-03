@@ -10,11 +10,18 @@ namespace JsonDataBaseFootball.Controllers
 {
     public static class Fill_inComboBox
     {
-        public static void DeleteComboBox<T>(ComboBox comboBox)
+        public static void ID<T>(ComboBox comboBoxDelete)
+        {
+            comboBoxDelete.DataSource = Repository.Get<T>();
+            comboBoxDelete.DisplayMember = "ID";
+            comboBoxDelete.ValueMember = "ID";
+        }
+        public static void Name<T>(ComboBox comboBox)
         {
             comboBox.DataSource = Repository.Get<T>();
-            comboBox.DisplayMember = "ID";
             comboBox.ValueMember = "ID";
+            comboBox.DisplayMember = "Name";
+            
         }
     }
 }

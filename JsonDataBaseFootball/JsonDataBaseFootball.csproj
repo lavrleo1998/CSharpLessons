@@ -58,6 +58,7 @@
     <Compile Include="Controllers\TeamControllers.cs" />
     <Compile Include="Controllers\TeamTypeControllers.cs" />
     <Compile Include="Controllers\TrainerControllers.cs" />
+    <Compile Include="Controllers\UpdateController.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Event.cs" />
     <Compile Include="Entities\EventType.cs" />
@@ -67,12 +68,10 @@
     <Compile Include="Entities\Team.cs" />
     <Compile Include="Entities\TeamType.cs" />
     <Compile Include="Entities\Trainer.cs" />
-
-    <Compile Include="Controllers\MainForm.cs">
-
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controllers\MainForm.Designer.cs">
+    <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -88,7 +87,7 @@
     <Compile Include="Services\TeamServices.cs" />
     <Compile Include="Services\TeamTypeServices.cs" />
     <Compile Include="Services\TrainerServices.cs" />
-    <EmbeddedResource Include="Controllers\MainForm.resx">
+    <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
