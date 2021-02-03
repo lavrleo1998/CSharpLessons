@@ -8,19 +8,24 @@ using JsonDataBaseFootball.Entities;
 namespace JsonDataBaseFootball.Services
 {
     class Service
-    {
+    {/*
+
         public static string Download<T>()
 
         {
-            var d = new Event();
-            
-            string str = "События\n";
-            foreach (var evenT in Repository.Get<T>())
+          T properties;
+            string str = "Футболисты\n";
+            foreach (var footballer in Repository.Get<Footballer>())
             {
-
-                str += "Айди: " + 
+                foreach (var prop in properties.GetType().GetProperties())
+                {
+                    str += ("{0}={1}", prop.Name, prop.GetValue(properties, null));
+                }
+                str += "\n";
             }
             return str;
         }
+     */
     }
+
 }
