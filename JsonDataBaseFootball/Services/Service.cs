@@ -7,25 +7,20 @@ using System.Threading.Tasks;
 using JsonDataBaseFootball.Entities;
 namespace JsonDataBaseFootball.Services
 {
-    class Service
-    {/*
+    public static class Helper
+    {
 
-        public static string Download<T>()
-
+        public static string Download(object obj)
         {
-          T properties;
-            string str = "Футболисты\n";
-            foreach (var footballer in Repository.Get<Footballer>())
+            var str = string.Empty;
+            var properties = obj.GetType().GetProperties();
+            foreach(var prop in properties)
             {
-                foreach (var prop in properties.GetType().GetProperties())
-                {
-                    str += ("{0}={1}", prop.Name, prop.GetValue(properties, null));
-                }
-                str += "\n";
+                str += $"Property name {prop.Name} has value = {prop.GetValue(obj)} \n";
             }
             return str;
         }
-     */
+     
     }
 
 }

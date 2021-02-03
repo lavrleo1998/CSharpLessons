@@ -11,18 +11,23 @@ namespace JsonDataBaseFootball.Services
     public class EventServices
     {
 
+
+
         public static string Download()
 
         {
-            string str = "События\n";
-            foreach (var evenT in Repository.Get<Event>())
-            {
+            //string str = "События\n";
+            //foreach (var evenT in Repository.Get<Event>())
+            //{
 
-                str += "Айди: " + evenT.ID + "; Дата: " + evenT.DateTime.ToString()
-                    + "; Тип события: " + Repository.Get<EventType>().Where(x => x.ID == evenT.EventTypeID).Select(x => x.Name).FirstOrDefault()
-                    + "; Играющий состав: " + Repository.Get<Team>().Where(x => x.ID == evenT.TeamID).Select(x => x.Name).FirstOrDefault() + "\n";
+            //    str += "Айди: " + evenT.ID + "; Дата: " + evenT.DateTime.ToString()
+            //        + "; Тип события: " + Repository.Get<EventType>().Where(x => x.ID == evenT.EventTypeID).Select(x => x.Name).FirstOrDefault()
+            //        + "; Играющий состав: " + Repository.Get<Team>().Where(x => x.ID == evenT.TeamID).Select(x => x.Name).FirstOrDefault() + "\n";
 
-            }
+            //}
+            var a = Repository.Get<Event>().FirstOrDefault();
+
+            var str = Helper.Download(a);
             return str;
         }
         public static void Add(int id, DateTime dateTime, int eventTipeID, int teamID) 
