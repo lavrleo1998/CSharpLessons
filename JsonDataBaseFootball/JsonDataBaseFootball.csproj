@@ -84,7 +84,7 @@
     <Compile Include="Services\FootballerServices.cs" />
     <Compile Include="Services\FootballerTeamServices.cs" />
     <Compile Include="Services\PositionServices.cs" />
-    <Compile Include="Services\Service.cs" />
+    <Compile Include="Services\AllService.cs" />
     <Compile Include="Services\TeamServices.cs" />
     <Compile Include="Services\TeamTypeServices.cs" />
     <Compile Include="Services\TrainerServices.cs" />
