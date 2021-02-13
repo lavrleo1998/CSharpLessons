@@ -29,8 +29,8 @@ namespace JsonDataBaseFootball
         public MainForm()
         {
             InitializeComponent();
-            /// NewDB.GenerateFiles();
-            /// NewDB.GenerateNewDB();
+             NewDB.GenerateFiles();
+             NewDB.GenerateNewDB();
             /////////////////////////////////////////////////////
             var DownloadForDeleteAndUppdate = new List<EntitesForDownload>
         {
