@@ -480,10 +480,13 @@ namespace JsonDataBaseFootball
             // 
             // comboBoxAddEntites
             // 
+            this.comboBoxAddEntites.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxAddEntites.FormattingEnabled = true;
-            this.comboBoxAddEntites.Location = new System.Drawing.Point(106, 6);
+            this.comboBoxAddEntites.ItemHeight = 20;
+            this.comboBoxAddEntites.Location = new System.Drawing.Point(177, 152);
+            this.comboBoxAddEntites.MaxDropDownItems = 80;
             this.comboBoxAddEntites.Name = "comboBoxAddEntites";
-            this.comboBoxAddEntites.Size = new System.Drawing.Size(144, 28);
+            this.comboBoxAddEntites.Size = new System.Drawing.Size(383, 28);
             this.comboBoxAddEntites.TabIndex = 84;
             // 
             // buttonAdd

@@ -30,7 +30,7 @@ namespace JsonDataBaseFootball
         {
             InitializeComponent();
             /// NewDB.GenerateFiles();
-            /// NewDB.GenerateNewDB();
+           ///  NewDB.GenerateNewDB();
             /////////////////////////////////////////////////////
             var DownloadForDeleteAndUppdate = new List<EntitesForDownload>
         {
